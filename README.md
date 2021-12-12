@@ -15,3 +15,14 @@ npm install -g supervisor
 2. 进入项目主目录，在终端npm install [包名]，包和相应的package.json就引入进来了。
 
 3. 将代码发给别人时，不需要包含node_module，只需要保留package.json，该文件中有"dependencies": {"md5": "^2.3.0"}，能知道该项目运行需要依赖的包，可以手动npm install md5， 也可以直接==npm i==
+
+## 06 fs 文件基本操作
+基本格式是：fs.操作名称(文件路径，参数二，(err,data)=>{
+    if(err){
+        console.log(err);
+        return;
+    }
+    console.log("操作成功");
+})
+## 07 06的案例
+

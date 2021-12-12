@@ -24,9 +24,6 @@ http.createServer(function (req, res) {
             res.end(data);            
         })
     }
-
-   
-
 }).listen(3000);
 
 
