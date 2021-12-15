@@ -25,4 +25,21 @@ npm install -g supervisor
     console.log("操作成功");
 })
 ## 07 06的案例
-
+## 08 
+### 01 es6中常见语法
+1. let  const的使用
+2. 模板字符串的使用
+3. 方法及属性的简写
+4. 箭头函数：改变this指向，指向了上下文
+### 02 async await promise的使用
+### 03 实例 获取异步方法fs.stat中得到的数据
+## 09 ☆ajax 浏览器异步响应
+### 项目结构
+-node_modules（npm install express模块）
+-public
+--index.html（发送ajax请求）
+-app.js（通过express模块创建服务器，创建路由请求处理函数）
+-package.json
+### 注意点
+index.html和app.js严格遵循项目结构
+## 10 nodejs创建一个静态web服务器 读取文件获取响应类型 处理异步

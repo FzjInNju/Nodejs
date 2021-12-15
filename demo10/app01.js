@@ -16,16 +16,13 @@ http.createServer(function (req, res) {
                 
                 res.writeHead(404, {'Content-Type': 'text/html;charset="utf-8"'});  
                 res.end('404这个页面不存在');
-               
+                
             }
             res.writeHead(200, {'Content-Type': 'text/html;charset="utf-8"'});  
             res.end(data);
             
         })
     }
-
-   
-
 }).listen(3000);
 
 

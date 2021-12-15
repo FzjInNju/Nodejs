@@ -1,0 +1,39 @@
+<!--
+    完成的任务：在第一个文本控件输入姓名，第二个输入年龄
+    当用户点击提交按钮时，将内容传递到服务器
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        <input type="text" id = "username">
+    </p>
+    <p>
+        <input type="text" id = "age">
+    </p>
+    <p>
+        <input type="button" value = "commit" id = "btn">
+    </p>
+    <script type="text/javascript">
+        var btn = document.getelementById("btn");
+        var username = document.getelementById("username");
+        var age = document.getelementById("age");
+        btn.onclick = function() {
+            var xhr = new XMLHttpRequest();
+            var nameValue = username.value;
+            var ageValue = age.value;
+            var params = 'username='+nameValue+'&age='+ageValue;
+            xhr.open("GET",'http://localhost:3000/get?'+params);
+            xhr.send();
+            xhr.onload = function() {
+                console.localhost(xhr.responseText);
+            }
+        }
+    </script>
+</body>
+</html>

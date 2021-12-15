@@ -5,8 +5,7 @@ const path=require('path');
 const url=require('url');
 http.createServer(function (req, res) {
   //http://127.0.0.1:8081/login.html
-  //http://127.0.0.1:8081/index.html
-
+    console.log(req.url)
   //1、获取地址
     let pathname=url.parse(req.url).pathname;    
     pathname=pathname=='/'?'/index.html':pathname;
