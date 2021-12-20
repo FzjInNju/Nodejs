@@ -43,3 +43,13 @@ npm install -g supervisor
 ### 注意点
 index.html和app.js严格遵循项目结构
 ## 10 nodejs创建一个静态web服务器 读取文件获取响应类型 处理异步
+## 11 封装nodejs中的代码
+将业务逻辑代码都放在module/routes.js中，在app.js中引用routes模块，使用routes.static(res,req,'static')获取路径
+## 11.2 路由
+根据不同的url，响应不同的功能
+需要将之前的异步改成同步
+## 12 EJS模块引擎
+EJS是后台模板，可以把我们==数据库和文件读取的数据==显示到html页面上面。需要npm安装
+- 实现动态网站：前后端分离（移动端）或后端渲染（把数据库绑定到html上）
+
+
